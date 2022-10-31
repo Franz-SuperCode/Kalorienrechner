@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Kalorienrechner</title>
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <!-- ===============Alle Inputfelder============================ -->
+            <section id="inputs">
+                <h1>Kalorien-Rechner</h1>
+                <label for="groesse">Körpergröße:</label>
+                <input id="groesse" type="number" placeholder="186 [cm]">
+
+                <label for="alter">Alter:</label>
+                <input id="alter" type="number" placeholder="45 [Jahre]">
+
+                <label for="gewicht">Gewicht:</label>
+                <input id="gewicht" type="number" placeholder="85 [Kg]">
+            </section>
+            <!-- ===============Alle Radio-Buttons============================ -->
+            <section id="radios">
+                <h2>Körperbau</h2>
+                <div>
+                    <input type="radio" name="geschlecht" id="weiblich">
+                    <label for="weiblich">Weiblich</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="geschlecht" id="maennlich">
+                    <label for="maennlich">Männlich</label>
+                </div>
+
+            </section>
+            <!-- ===============Arbeits & Freizeitaktivität============================ -->
+            <section id="aktivitaet">
+                <h2>Arbeits- und Freizeitaktivität</h2>
+                <select name="aktivitaet" id="aktivitaet__select">
+                    <option value="0.95">Schlafen</option>
+                    <option value="1.2">Nur Sitzen oder Liegen</option>
+                    <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität
+                        in der Freizeit, z.B. Büroarbeit</option>
+                    <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B.
+                        Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                    <option value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner,
+                        Handwerker, Mechaniker, Hausfrauen</option>
+                    <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+                </select>
+
+            </section>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <table>
+            <tr>
+                <td></td>
+                <td>kcal</td>
+                <td>kJ</td>
+            </tr>
+            <tr>
+                <td>Grundumsatz</td>
+                <td id="grundKCAL">X</td>
+                <td id="grundKJ">X</td>
+            </tr>
+            <tr>
+                <td>Gesamtumsatz</td>
+                <td id="gesamtKCAL">X</td>
+                <td id="gesamtKJ">X</td>
+            </tr>
+        </table>
+        <p>Das Ergebnis des Rechners sollte nur als Orientierung angesehen werden, da es verschiedene
+            Fehlermöglichkeiten geben kann.</p>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
