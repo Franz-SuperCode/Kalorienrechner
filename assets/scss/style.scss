@@ -70,14 +70,11 @@ main {
 
     table {
         border-collapse: collapse;
-        max-width: 100%;
+        border-radius: 25px;
+        width: 50%;
         margin: 1rem 0;
-
-        tr {
-            border: 1px solid black;
-
-
-        }
+        text-align: center;
+        table-layout: fixed;
 
         td {
             border: 1px solid black;
@@ -85,4 +82,8 @@ main {
 
 
     }
+}
+
+.backgroundColor {
+    background-color: rgb(191, 160, 190);
 }
